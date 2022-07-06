@@ -18,6 +18,7 @@ int main(int argc, string argv[])
     }
 
     // If only 1 argument is given
+    // If argument contains other than digits
     if (only_digits(argv[1]) == false)
     {
         printf("Usage: ./caesar key\n");
@@ -25,7 +26,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    // If argument given fulfils criteria (numbers)
+    // If argument fulfils criteria (numbers)
 
     // convert argument to int
     int key = atoi(argv[1]);
