@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
             count++;
         }
 
+        // If output file can be accessed successfully
         if (output != NULL)
         {
             fwrite(buffer, sizeof(char), 512, output);
